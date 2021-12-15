@@ -54,10 +54,10 @@
                 numpad_layer {
                         label = "BUMPAD";
                         bindings = < 
-   &kp TAB     &kp ESC   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_DIVIDE    &kp KP_EQUAL    &kp KP_N7 &kp UP &kp KP_N9 &kp KP_MINUS &kp BSPC
+   &kp TAB     &kp ESC   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_SLASH    &kp KP_EQUAL    &kp KP_N7 &kp UP &kp KP_N9 &kp KP_MINUS &kp BSPC
    &kp KP_NLCK &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_DOT      &kp KP_ASTERISK &kp LEFT &kp DOWN &kp RIGHT &kp KP_PLUS  &none
-   &tog NUMPAD &kp ENTER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS    &kp KP_PLUS    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
-               &mt LGUI SPC &mo CONFIG &kp BSPC     &kp SPC &trans &mt RALT ENTER
+   &tog NUMPAD &kp ENTER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS    &kp KP_PLUS     &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
+               &mt LGUI SPC &mo CONFIG &kp BSPC     &kp SPC &mo NUMPAD &mt RALT ENTER
                         >;
                 };
 
@@ -67,7 +67,7 @@
    &kp ESC      &kp N1    &kp N2  &kp N3   &kp N4     &kp N5       &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &kp DEL
    &kp GRAVE    &kp EXCL  &kp AT  &kp HASH &kp DOLLAR &kp PRCNT    &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &none
    &tog NUMPAD  &none     &none   &kp BSLH &kp LBKT   &kp RBKT     &none     &none    &none    &none    &none    &none 
-             &mt LGUI SPC &trans &kp BSPC                   &kp SPC &mo CONFIG &mt RALT ENTER
+             &mt LGUI SPC &mo NUMROW &kp BSPC                   &kp SPC &mo CONFIG &mt RALT ENTER
                         >;
                 };
 
@@ -76,8 +76,8 @@
                         bindings = <
    &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none 
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &none &none &none &none &none &none
-                                                &mo CONFIG &trans &mo NUMROW    &kp SPC &mo trans &kp F13
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
+                                                &mo CONFIG &trans &mo NUMROW    &kp SPC &trans &kp F13
                         >;
                 };
 		

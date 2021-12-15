@@ -54,9 +54,9 @@
                 numpad_layer {
                         label = "BUMPAD";
                         bindings = < 
-   &kp TAB     &kp ESC   &kp KP_N7 &kp KP_N8 &kp KP_N9 &KP_DIVIDE    &kp KP_EQUAL    &kp KP_N7 &kp UP &kp KP_N9 &kp KP_MINUS &kp BSPC
-   &kp KP_NLCK &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_DOT   &kp KP_ASTERISK &kp LEFT &kp DOWN &kp RIGHT &kp KP_PLUS  &none
-   &tog NUMPAD &kp ENTER &kp KP_N1 &kp KP_N2 &kp KP_N3 &KP_MINUS    &kp KP_PLUS    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
+   &kp TAB     &kp ESC   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_DIVIDE    &kp KP_EQUAL    &kp KP_N7 &kp UP &kp KP_N9 &kp KP_MINUS &kp BSPC
+   &kp KP_NLCK &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_DOT      &kp KP_ASTERISK &kp LEFT &kp DOWN &kp RIGHT &kp KP_PLUS  &none
+   &tog NUMPAD &kp ENTER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS    &kp KP_PLUS    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
                &mt LGUI SPC &mo CONFIG &kp BSPC     &kp SPC &trans &mt RALT ENTER
                         >;
                 };
@@ -80,7 +80,7 @@
                                                 &mo CONFIG &trans &mo NUMROW    &kp SPC &mo trans &kp F13
                         >;
                 };
-				
+		
 				gaming_layer {
                         label = "GAMING";
                         bindings = <

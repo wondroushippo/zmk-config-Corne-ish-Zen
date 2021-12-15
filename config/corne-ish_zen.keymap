@@ -36,9 +36,9 @@
 		};
 		combo_numequal {
 			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <17 5>;
+			key-positions = <4 5>;
 			layers = <1>;
-			bindings = <&kp KP_EQUAL>;
+			bindings = <&kp EQUAL>;
 		};
 		combo_numplus {
 			timeout-ms = <COMBO_TIMEOUT>;

@@ -42,7 +42,7 @@
 		};
 		combo_numplus
 			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <5 17>;
+			key-positions = <17 29>;
 			bindings = <&kp KP_PLUS>;
 			layers = <1>;
 		};

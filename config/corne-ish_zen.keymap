@@ -31,20 +31,20 @@
 		combo_dash {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <6 18>;
-			bindings = <&kp MINUS>;
 			layers = <0>;
+			bindings = <&kp MINUS>;
 		};
-		combo_numequal
+		combo_numequal {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <5 17>;
-			bindings = <&kp KP_EQUAL>;
 			layers = <1>;
+			bindings = <&kp KP_EQUAL>;
 		};
-		combo_numplus
+		combo_numplus {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <17 29>;
-			bindings = <&kp KP_PLUS>;
 			layers = <1>;
+			bindings = <&kp KP_PLUS>;
 		};
     };
 };

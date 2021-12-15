@@ -32,6 +32,19 @@
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <6 18>;
 			bindings = <&kp MINUS>;
+			layers = <0>;
+		};
+		combo_numequal
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <5 17>;
+			bindings = <&kp KP_EQUAL>;
+			layers = <1>;
+		};
+		combo_numplus
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <5 17>;
+			bindings = <&kp KP_PLUS>;
+			layers = <1>;
 		};
     };
 };

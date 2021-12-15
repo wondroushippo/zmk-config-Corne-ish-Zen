@@ -8,6 +8,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define COMBO_TIMEOUT 50
+
 
 #define QWERTY 0
 #define GAMING 1
@@ -17,14 +21,17 @@
 #define CONFIG 5
 
 / {
-		combos {
-			compatible = "zmk,combos";
-			combo_esc {
-				timeout-ms = <50>;
-				key-positions = <0 1>;
-				bindings = <&kp ESC>;
-						};
-				};
+    combos {
+        compatible = "zmk,combos";
+        combo_escape {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+			 };
+		 };
+	 };
+
+/ {
 				
         keymap {
                 compatible = "zmk,keymap";

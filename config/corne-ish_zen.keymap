@@ -28,7 +28,7 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-		combo_dash
+		combo_dash {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <6 18>;
 			bindings = <&kp MINUS>;

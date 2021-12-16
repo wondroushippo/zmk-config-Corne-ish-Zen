@@ -45,6 +45,7 @@
 			key-positions = <17 29>;
 			layers = <1>;
 			bindings = <&kp KP_PLUS>;
+		};	
 		combo_numast {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <5 17>;

@@ -17,8 +17,8 @@
 #define NUMPAD 1
 #define NUMROW 2
 #define CONFIG 3
-#define ADJUST 4
-#define GAMING 5
+#define GAMING 4
+#define ADJUST 5
 
 / {
     combos {
@@ -38,7 +38,7 @@
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <4 5>;
 			layers = <1>;
-			bindings = <&kp EQUAL>;
+			bindings = <&kp KP_ASTERISK>;
 		};
 		combo_numplus {
 			timeout-ms = <COMBO_TIMEOUT>;
@@ -50,21 +50,12 @@
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <5 17>;
 			layers = <1>;
-			bindings = <&kp KP_ASTERISK>;
+			bindings = <&kp EQUAL>;
 		};
     };
 };
 
 / {
-    behaviors {
-        spcdel: shift_space_delete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_SPACE_DELETE";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp DEL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
 				
         keymap {
                 compatible = "zmk,keymap";

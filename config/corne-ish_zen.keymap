@@ -45,11 +45,25 @@
 			key-positions = <17 29>;
 			layers = <1>;
 			bindings = <&kp KP_PLUS>;
+		combo_numast {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <5 17>;
+			layers = <1>;
+			bindings = <&kp KP_ASTERISK>;
 		};
     };
 };
 
 / {
+    behaviors {
+        spcdel: shift_space_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_SPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
 				
         keymap {
                 compatible = "zmk,keymap";
@@ -67,8 +81,8 @@
                 numpad_layer {
                         label = "BUMPAD";
                         bindings = < 
-   &kp LC(Z)   &kp TAB   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_SLASH    &kp KP_EQUAL    &kp KP_N7 &kp UP &kp KP_N9 &kp KP_MINUS &kp BSPC
-   &kp KP_NLCK &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_DOT      &kp KP_ASTERISK &kp LEFT &kp DOWN &kp RIGHT &kp KP_PLUS  &none
+   &kp LC(Z)   &kp TAB   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_SLASH    &kp KP_EQUAL    &kp HOME &kp UP &kp END &kp PG_UP &kp BSPC
+   &kp KP_NLCK &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_DOT      &kp KP_ASTERISK &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN  &kp BSLH
    &tog NUMPAD &kp ENTER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS    &kp KP_PLUS     &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
                &mt LGUI SPC &mo CONFIG &kp BSPC     &kp SPC &mo NUMPAD &mt RALT ENTER
                         >;
@@ -87,10 +101,10 @@
                 config_layer {
                         label = "CONFIG";
                         bindings = <
-   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none 
+   &reset     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &kp F12
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
-                                                &mo CONFIG &trans &mo NUMROW    &kp SPC &trans &kp F13
+                                                &trans &trans &trans    &trans &trans &tog GAMING
                         >;
                 };
 		
@@ -100,7 +114,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
    &kp LALT  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp QUOT &kp ENTER
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
-               &kp LCTL &mo NUMROW &kp SPC    &kp SPC &mo ADJUST &kp F13
+               &kp LCTL &mo NUMROW &kp SPC    &kp SPC &mo ADJUST &tog GAMING
                         >;
                 };
 				

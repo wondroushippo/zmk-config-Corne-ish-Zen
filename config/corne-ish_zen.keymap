@@ -52,6 +52,42 @@
 			layers = <1>;
 			bindings = <&kp EQUAL>;
 		};
+        combo_numlayer6 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <1 13>;
+            layers = <2>;
+            bindings = <&kp N6>;
+        };
+        combo_numlayer7 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <2 14>;
+            layers = <2>;
+            bindings = <&kp N7>;
+        };   
+        combo_numlayer8 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <3 15>;
+            layers = <2>;
+            bindings = <&kp N8>;
+        };   
+        combo_numlayer9 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <4 16>;
+            layers = <2>;
+            bindings = <&kp N9>;
+        };   
+        combo_numlayer0 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <5 17>;
+            layers = <2>;
+            bindings = <&kp N0>;
+        }; 
+        combo_lefthandspace {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <5 17>;
+            layers = <0>;
+            bindings = <&kp SPC>;
+        };                                                  
     };
 };
 
@@ -64,7 +100,7 @@
                         label = "QWERTY";
                         bindings = <
    &kp TAB      &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp DEL
-   &mt LCTL ESC &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp SEMI &kp QUOT
+   &mt LCTL ESC &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp SEMI &kp APOS
    &kp LSHFT    &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
                 &mt LGUI SPC &mo NUMROW &kp BSPC     &kp SPC &mo NUMPAD &mt RALT ENTER
                         >;
@@ -75,7 +111,7 @@
                         bindings = < 
    &kp LC(Z)   &kp TAB   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_SLASH    &kp KP_EQUAL    &kp HOME &kp UP &kp END &kp PG_UP &kp BSPC
    &kp KP_NLCK &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_DOT      &kp KP_ASTERISK &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN  &kp BSLH
-   &tog NUMPAD &kp ENTER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS    &kp KP_PLUS     &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
+   &tog NUMPAD &kp ENTER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS    &kp KP_PLUS     &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &kp RSFT
                &mt LGUI SPC &mo CONFIG &kp BSPC     &kp SPC &mo NUMPAD &mt RALT ENTER
                         >;
                 };
@@ -83,9 +119,9 @@
                 numrow_layer {
                         label = "NUMROW";
                         bindings = <
-   &kp ESC      &kp N1    &kp N2  &kp N3   &kp N4     &kp N5       &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &kp DEL
-   &kp GRAVE    &kp EXCL  &kp AT  &kp HASH &kp DOLLAR &kp PRCNT    &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &none
-   &tog NUMPAD  &none     &none   &kp BSLH &kp LBKT   &kp RBKT     &none     &none    &none    &none    &none    &none 
+   &kp TAB      &kp N1    &kp N2  &kp N3   &kp N4     &kp N5       &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &kp DEL
+   &kp GRAVE    &kp EXCL  &kp AT  &kp HASH &kp DOLLAR &kp PRCNT    &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp APOS
+   &tog NUMPAD  &none     &none   &kp BSLH &kp LBKT   &kp RBKT     &none     &kp LBRC &kp RBRC &kp LBKT &kp RBKT &kp RSFT 
              &mt LGUI SPC &mo NUMROW &kp BSPC                   &kp SPC &mo CONFIG &mt RALT ENTER
                         >;
                 };
@@ -93,10 +129,10 @@
                 config_layer {
                         label = "CONFIG";
                         bindings = <
-   &reset     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &kp F12
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
-                                                &trans &trans &trans    &trans &trans &tog GAMING
+   &reset     &kp F1       &kp F2        &kp F3        &kp F4       &kp F5          &kp F6 &kp F7     &kp F8       &kp F9       &kp F10 &kp F11 
+   &kp CAPS   &none        &kp LG(LS(S)) &kp LG(LS(4)) &none        &none           &none  &kp C_PP   &kp C_PREV   &kp C_NEXT   &none   &kp F12
+   &LSHFT     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4    &none  &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &none   &none
+                                                  &bt BT_CLEAR &trans &trans              &trans &trans &tog GAMING
                         >;
                 };
 		

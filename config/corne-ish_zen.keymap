@@ -28,24 +28,42 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+		combo_dash {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <6 18>;
+			layers = <0 1 2>;
+			bindings = <&kp MINUS>;
+		};
         combo_leftalt {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <12 24>;
             layers = <0>;
             bindings = <&kp LALT>;
-        };          
+        };        
+        combo_rightctrl {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <23 35>;
+            layers = <0>;
+            bindings = <&kp RCTRL>;
+        };     		
         combo_lefthandspace {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <5 17>;
+            key-positions = <29 37>;
             layers = <0>;
             bindings = <&kp SPC>;
-        };                        
-		combo_dash {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <6 18>;
-			layers = <0>;
-			bindings = <&kp MINUS>;
 		};
+        combo_rightmonumrow {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <30 41>;
+            layers = <0>;
+            bindings = <&mo NUMROW>;
+		};		
+        combo_lefthanddel {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <17 29>;
+            layers = <0>;
+            bindings = <&kp DEL>;			
+        };                        
 		combo_numequal {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <4 5>;
@@ -132,7 +150,7 @@
                         label = "NUMROW";
                         bindings = <
    &kp TAB     &kp N1    &kp N2    &kp N3    &kp N4     &kp N5          &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &kp DEL
-   &tog NUMPAD &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR &kp PRCNT       &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp APOS
+   &tog NUMPAD &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR &kp PRCNT       &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp BSLH
    &kp LSFT    &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)  &kp LC(LS(V))   &kp GRAVE &kp LBRC &kp RBRC &kp LBKT &kp RBKT &kp RSFT 
              &mt LGUI SPC &mo NUMROW &kp BSPC                   &kp SPC &mo CONFIG &mt RALT ENTER
                         >;

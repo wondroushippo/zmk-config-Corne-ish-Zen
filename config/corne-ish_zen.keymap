@@ -54,16 +54,22 @@
 		};
         combo_rightmonumrow {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <30 41>;
+            key-positions = <30 40>;
             layers = <0>;
             bindings = <&mo NUMROW>;
 		};		
         combo_lefthanddel {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <17 29>;
+            key-positions = <5 17>;
             layers = <0>;
             bindings = <&kp DEL>;			
-        };                        
+        }; 
+        combo_delrow {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <3 15>;
+            layers = <0 1>;
+            bindings = <&kp LA(E)>;			
+        };     		
 		combo_numequal {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <4 5>;

@@ -12,13 +12,16 @@
 
 #define COMBO_TIMEOUT 50
 
-
 #define QWERTY 0
 #define NUMPAD 1
 #define NUMROW 2
 #define CONFIG 3
 #define GAMING 4
 #define ADJUST 5
+
+&mt {
+    quick-tap-ms = <200>;
+}
 
 / {
     combos {

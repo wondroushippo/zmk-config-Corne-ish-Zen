@@ -151,7 +151,7 @@
    &tog NUMPAD  &kp TAB   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_SLASH    &kp HOME &kp PG_DN  &kp PG_UP &kp END   &kp EQUAL &kp DEL
    &mt LCTL ESC &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_DOT      &kp LEFT &kp DOWN   &kp UP    &kp RIGHT &kp MINUS &kp PIPE
    &kp LSFT     &kp ENTER &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS    &kp LBRC &kp RBRC   &kp LBKT  &kp RBKT  &kp BSLH  &kp RSFT 
-                                &mt LGUI SPC &mo CONFIG &mt LCTL BSPC   &kp SPC  &mo NUMPAD &mt RALT ENTER
+                                &mt LGUI SPC &mo CONFIG &mt LCTL BSPC   &kp SPC  &mo NUMPAD &mt RALT KP_NUMLOCK
                         >;
                 };
 
